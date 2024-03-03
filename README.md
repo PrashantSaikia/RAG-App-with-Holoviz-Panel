@@ -15,3 +15,10 @@ This uses langchain only to create the vector DB, and for the querying process u
 
 ## 3. App with openai.chat.completions and streaming response
 This streams the LLM response. For this, we need to remove the `async response` function from the previous version, and instead modify the `get_LLM_response` function as `async` and yield the LLM response token by token, and send that as callback to the panel chat interface.
+
+## 4. The final app with some UI enhancements
+This has the following UI add-ons:
+- Background color is black
+- The app title/name is defined as CompactBot
+- A user guide is added
+- The names and avatars of the user and assistant have been customized
