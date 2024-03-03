@@ -160,7 +160,7 @@ chat_interface.send(
 with open('user_guide.md') as f:
     user_guide = f.read()
 
-template = panel.template.BootstrapTemplate(title="CompactBot", header_background = "#000000", main=[panel.Tabs( ('Chat', chat_interface), ('User Guide', user_guide) )])
+template = panel.template.BootstrapTemplate(title="CompactBot", header_background = "#000000", main=[panel.Tabs( ('Chat', chat_interface), ('User Guide', user_guide), dynamic=True )])
 
 template.servable()
 
