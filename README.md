@@ -22,3 +22,4 @@ This has the following UI add-ons:
 - The app title/name is defined as CompactBot
 - A user guide is added
 - The names and avatars of the user and assistant have been customized
+- The `dynamic=True` in `panel.tabs` is because otherwise it introduces unnecessary scrolling beyond the bottom of the page.
